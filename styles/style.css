@@ -327,3 +327,86 @@ img{
     font-size: 12px;
     color: dimgray;
 }
+
+@media (max-width: 998px) {
+    .banner__title {
+        font-size: 3.75rem;
+    }
+    
+    .banner__desc {
+        width: 100%;
+    }
+    .banner__btn {
+        width: 60%;
+    }
+    .section-title__head {
+        font-size: 2rem;
+    }
+    .product__btn{
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+    .product__price {
+        font-size: 1rem;
+    }
+    .feature {
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    .feature__img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .feature__title{
+        font-size: 1rem;
+    }
+    .feature__desc{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .banner__info{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .banner__btn {
+        width: 100%;
+    }
+    .banner__img{
+        max-width: 60%;
+        margin: auto;
+    }
+    .section-title__head{
+        margin-top: 50px;
+        font-size: 1.8rem;
+    }
+    .product__btn {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+    .product__price{
+        font-size: 2.2rem;
+    }
+    .section-title--shoe{
+        font-size: 1.5rem;
+    }
+    .feature__img {
+        width: 80px;
+        height: 80px;
+    }
+    .penguin, .fashion {
+        font-size: 1rem;
+    }
+    .footer__info {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title__head{
+        font-size: 1.4rem;
+    }
+}
