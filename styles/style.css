@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
+/*------------ 
+-------------HTML Resets and defaults-----------
+                          ------------- */
 *,::before,::after{
     box-sizing: border-box;
 }
@@ -36,7 +38,9 @@ img{
     max-width: 100%;
     height: auto;
 }
-
+/*------------ 
+-------------Layout Classes-----------
+                          ------------- */
 .bd-grid{
     display: grid;
     gap: 1.5rem;
@@ -44,7 +48,9 @@ img{
 .l-main{
     overflow: hidden;
 }
-
+/*------------ 
+------------- Classes CSS -----------
+                          ------------- */
 
 .brand__logo {
     position: relative;
@@ -62,6 +68,34 @@ img{
     color: #363958;
 }
 
+
+.section-title{
+    width: 35%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+.section-title::after{
+    position: absolute;
+    content: "";
+    bottom: -5%;
+    height: 1px;
+    width: 100%;
+    background-color: #2A1E59;
+}
+
+.section-title__head{
+    font-size: 3.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #363958;
+    font-family: 'Bebas Neue', cursive;
+}
+/*------------ 
+-------------Nav Starts Here-----------
+                          ------------- */
 .nav__list {
     margin-left: auto;
 }
@@ -74,8 +108,12 @@ img{
 }
 .nav__link.active {
     color: #3E3E3E;
-    
 }
+
+
+/*------------ 
+-------------Banner Starts Here-----------
+                          ------------- */
 .banner{
     height: 100vh;
 }
@@ -120,4 +158,54 @@ img{
 }
 .banner__btn i {
     padding-right: 10px;
+}
+
+/*------------ 
+-------------Products Start Here-----------
+                          ------------- */
+
+
+.products{
+    margin-top: 2rem;
+}
+
+.card-img-top{
+    width: 250px;
+    height: 250px;
+    padding: 5px 20px;
+    margin: 0 auto;
+}
+.product__title{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+
+.product__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.product__price{
+    font-size: 2rem;
+    color: #FABE4C;
+    font-weight: bold;
+}
+
+.product__btn{
+    padding: 10px 25px;
+    background: #FABE4C;
+    border-radius: 10px;
+    color: black;
+    transition: 500ms;
+}
+
+.product__btn:hover {
+    color: #FABE4C;
+    background: black;
+}
+.product__btn i {
+    padding-right: 8px;
 }
