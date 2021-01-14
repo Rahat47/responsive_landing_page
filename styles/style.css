@@ -171,9 +171,6 @@ img{
 .banner__btn i {
     padding-right: 10px;
 }
-.banner_carousel{
-    height: 100vh;
-}
 .carousel__control{
     position: absolute;
     font-size: 50px;
